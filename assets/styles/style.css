@@ -1,0 +1,33 @@
+h1.pg-heading {
+  font-size: 3.4rem; }
+
+h2.pg-subheading {
+  font-size: 2rem; }
+
+i.fa, i.fas {
+  vertical-align: middle; }
+
+nav .sidenav-trigger {
+  float: right; }
+
+.sidenav a.profile-img-side-nav {
+  height: 100%;
+  margin: 24px 0 12px 0;
+  text-align: center; }
+  .sidenav a.profile-img-side-nav img.profile-img {
+    display: inline-block;
+    margin: auto;
+    border-radius: 50%; }
+  .sidenav a.profile-img-side-nav span.profile-name {
+    display: block;
+    font-size: 1.6rem; }
+
+#main .section-header {
+  font-size: 2.56rem; }
+
+.carousel-container h2.section-header {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+/*# sourceMappingURL=style.css.map */
