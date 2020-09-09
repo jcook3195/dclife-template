@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="../assets/styles/style.css" rel="stylesheet" />
+    <title>Dodge County Businesses | Dodge County Life</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section id="header">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="../index.html" class="brand-logo grey-text text-darken-2">DC Life</a>
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger red-text text-darken-2"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a
+                href="business/all-businesses.html"
+                class="grey-text text-darken-2"
+                ><i class="fas fa-store-alt"></i> Businesses</a
+              >
+            </li>
+            <li>
+              <a href="profile/profile.html" class="grey-text text-darken-2"
+                ><i class="fas fa-user-circle"></i> Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="account/account-settings.html"
+                class="grey-text text-darken-2"
+                ><i class="fas fa-cog"></i> Settings</a
+              >
+            </li>
+            <li>
+              <a href="#!" class="grey-text text-darken-2"
+                ><i class="fas fa-sign-out-alt"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a
+            href="profile/profile.html"
+            class="profile-img-side-nav grey-text text-darken-2"
+            ><img
+              class="profile-img"
+              src="https://via.placeholder.com/150"
+            />&nbsp;<span class="profile-name">Jordan Cook</span></a
+          >
+        </li>
+        <li>
+          <a href="business/all-businesses.html"
+            ><i class="fas fa-store-alt"></i> Businesses</a
+          >
+        </li>
+        <li>
+          <a href="profile/profile.html"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+        </li>
+        <li>
+          <a href="account/account-settings.html"
+            ><i class="fas fa-cog"></i> Settings</a
+          >
+        </li>
+        <li>
+          <a href="#!"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- body -->
+    <section id="main">
+      <div class="jumbotron grey lighten-2">
+        <div class="container">
+          <div class="section">
+            <h1 class="pg-heading">Local Businesses</h1>
+            <h2 class="pg-subheading">
+              Some text explaining a little more about this title.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card-links section">
+          <h2 class="center-align section-header">Businesses</h2>
+
+          <!-- businesses 1 -->
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card img-ab">
+                <div class="card-image">
+                  <img src="https://via.placeholder.com/800" />
+                  <div class="card-tags">
+                    <span class="tag red darken-1">Tag 1</span>
+                    <span class="tag red darken-1">Tag 2</span>
+                    <span class="tag red darken-1">Tag 3</span>
+                  </div>
+                  <span class="card-title">Business Name</span>
+                  <div class="card-review-stars">
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star-half rev-star amber-text text-darken-1"
+                    ></i>
+                  </div>
+                  <a
+                    class="btn-floating halfway-fab waves-effect waves-light red"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+                <div class="card-content">
+                  <h3 class="b-card-cat">Business Category</h3>
+                  <div class="left-align">
+                    <a
+                      class="view-detail-link red darken-1 waves-effect waves-light modal-trigger"
+                      href="#modal1"
+                      >View Business <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- businesses 2 -->
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card img-ab">
+                <div class="card-image">
+                  <img src="https://via.placeholder.com/800" />
+                  <div class="card-tags">
+                    <span class="tag red darken-1">Tag 1</span>
+                    <span class="tag red darken-1">Tag 2</span>
+                    <span class="tag red darken-1">Tag 3</span>
+                  </div>
+                  <span class="card-title">Business Name</span>
+                  <div class="card-review-stars">
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star-half rev-star amber-text text-darken-1"
+                    ></i>
+                  </div>
+                  <a
+                    class="btn-floating halfway-fab waves-effect waves-light red"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+                <div class="card-content">
+                  <h3 class="b-card-cat">Business Category</h3>
+                  <div class="left-align">
+                    <a
+                      class="view-detail-link red darken-1 waves-effect waves-light modal-trigger"
+                      href="#modal1"
+                      >View Business <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- businesses 3 -->
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card img-ab">
+                <div class="card-image">
+                  <img src="https://via.placeholder.com/800" />
+                  <div class="card-tags">
+                    <span class="tag red darken-1">Tag 1</span>
+                    <span class="tag red darken-1">Tag 2</span>
+                    <span class="tag red darken-1">Tag 3</span>
+                  </div>
+                  <span class="card-title">Business Name</span>
+                  <div class="card-review-stars">
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star rev-star amber-text text-darken-1"
+                    ></i>
+                    <i
+                      class="fas fa-star-half rev-star amber-text text-darken-1"
+                    ></i>
+                  </div>
+                  <a
+                    class="btn-floating halfway-fab waves-effect waves-red white"
+                    ><i class="fas fa-heart red-text"></i></i
+                  ></a>
+                </div>
+                <div class="card-content">
+                  <h3 class="b-card-cat">Business Category</h3>
+                  <div class="left-align">
+                    <a
+                      class="view-detail-link red darken-1 waves-effect waves-light modal-trigger"
+                      href="#modal1"
+                      >View Business <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- single business modal -->
+    <div id="modal1" class="modal business-modal">
+        <div class="modal-img">
+            <img src="https://via.placeholder.com/1000" />
+            <div class="back-btn">
+                <a class="modal-close white-text"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="business-fav">
+                <a
+                    class="btn-floating waves-effect waves-light red"
+                    ><i class="far fa-heart"></i
+                  ></a>
+            </div>
+            <span class="modal-img-title">Business Name</span>
+            <div class="business-contact">
+                <a href="tel:4782312124" class="btn-floating waves-effect waves-light blue darken-2">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <div class="modal-review-stars">
+                <i
+                  class="fas fa-star rev-star amber-text text-darken-1"
+                ></i>
+                <i
+                  class="fas fa-star rev-star amber-text text-darken-1"
+                ></i>
+                <i
+                  class="fas fa-star rev-star amber-text text-darken-1"
+                ></i>
+                <i
+                  class="fas fa-star rev-star amber-text text-darken-1"
+                ></i>
+                <i
+                  class="fas fa-star-half rev-star amber-text text-darken-1"
+                ></i>
+              </div>
+            <span class="business-category">Business Category</span>
+        </div>
+        <div class="modal-content">
+            <div class="divider"></div>
+            <!-- about -->
+            <div class="section">
+                <h4>About Business</h4>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <!-- tabs -->
+            <div class="divider"></div>
+            <div class="section">
+                <div class="row">
+                    <div class="col s12">
+                      <ul class="tabs">
+                        <li class="tab col s3"><a class="active" href="#test1">Products</a></li>
+                        <!-- <li class="tab col s3"><a href="#test2">Menu</a></li> -->
+                        <li class="tab col s3"><a href="#test4">Deals</a></li>
+                      </ul>
+                      
+                    </div>
+                    <div id="test1" class="col s12">Products</div>
+                    <!-- <div id="test2" class="col s12">Menu</div> -->
+                    <div id="test4" class="col s12">Deals</div>
+                  </div>
+            </div>
+            <!-- reviews -->
+            <div class="divider"></div>
+            <div class="section">
+                <h4>Reviews</h4>
+                <div class="review-form row z-depth-3">
+                    <form class="col s12 rating">
+                        <div class="row">
+                            <div class="col s12">
+                                <h5>Leave a Review</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="stars col s12">
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1" id="star1-label"><i class="far fa-star"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2" id="star2-label"><i class="far fa-star"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3" id="star3-label"><i class="far fa-star"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4" id="star4-label"><i class="far fa-star"></i></label>
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5" id="star5-label"><i class="far fa-star"></i></label>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <textarea placeholder="Write your review..." class="materialize-textarea"></textarea>
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <button type="submit" class="waves-effect waves-light btn red darken-1">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="reviews"></div>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <h4>Some Stuff</h4>
+                <p>Stuff</p>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <h4>Some Stuff</h4>
+                <p>Stuff</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section id="footer">
+      <footer class="page-footer white z-depth-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 offset-l2 s12">
+              <h5 class="grey-text text-darken-3">Navigation</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!"
+                    >Grow Your Business</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!">Blog</a>
+                </li>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!"
+                    >Community Resources</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container grey-text text-darken-2 center">
+            &copy; 2020 Triple C Digital, LLC
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../assets/scripts/script.js"></script>
+  </body>
+</html>
