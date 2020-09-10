@@ -41,9 +41,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label,
 .input-field .prefix.active {
   color: #e53935 !important; }
 
-nav .sidenav-trigger {
-  float: right; }
-
 .mt-0 {
   margin-top: 0 !important; }
 
@@ -80,16 +77,25 @@ nav .sidenav-trigger {
 .pb-3 {
   padding-bottom: 12px !important; }
 
+nav .sidenav-trigger {
+  float: right; }
+nav a.brand-logo {
+  height: 100%; }
+  nav a.brand-logo img {
+    height: 100%; }
+
 .sidenav a.profile-img-side-nav {
   height: 100%;
   margin: 24px 0 12px 0;
   text-align: center; }
   .sidenav a.profile-img-side-nav img.profile-img {
+    height: 150px;
     display: inline-block;
     margin: auto;
     border-radius: 50%; }
   .sidenav a.profile-img-side-nav span.profile-name {
     display: block;
+    margin-top: -24px;
     font-size: 1.6rem; }
 
 #main .section-header {

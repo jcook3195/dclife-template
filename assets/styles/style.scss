@@ -57,12 +57,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label,
   color: #e53935 !important;
 }
 
-nav {
-  .sidenav-trigger {
-    float: right;
-  }
-}
-
 // 0 - 0px
 // 1 - 4px
 // 2 - 8px
@@ -122,6 +116,22 @@ nav {
   padding-bottom: 12px !important;
 }
 
+nav {
+  .sidenav-trigger {
+    float: right;
+  }
+
+  a {
+    &.brand-logo {
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
 .sidenav {
   a {
     &.profile-img-side-nav {
@@ -131,6 +141,7 @@ nav {
 
       img {
         &.profile-img {
+          height: 150px;
           display: inline-block;
           margin: auto;
           border-radius: 50%;
@@ -140,6 +151,7 @@ nav {
       span {
         &.profile-name {
           display: block;
+          margin-top: -24px;
           font-size: 1.6rem;
         }
       }
