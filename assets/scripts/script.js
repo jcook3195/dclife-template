@@ -120,4 +120,19 @@ $(document).ready(function () {
       '<i class="fas fa-star red-text text-darken-1"></i>'
     );
   });
+
+  // init dropdown
+  if ($('.dropdown-trigger').length) {
+    $('.dropdown-trigger').dropdown();
+  }
+
+  // init slider
+  if ($('.slider').length) {
+    $('.slider').slider();
+  }
+
+  // init collapsible (accordion)
+  if ($('.collapsible').length) {
+    $('.collapsible').collapsible();
+  }
 });

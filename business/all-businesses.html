@@ -113,12 +113,37 @@
         <div class="card-links section">
           <h2 class="center-align section-header">Businesses</h2>
 
+          <!-- search -->
+          <div class="row mb-0">
+              <div class="col s12">
+                  <div class="input-field">
+                    <i class="material-icons prefix">search</i>
+                    <input id="search" type="text" class="validate">
+                    <label for="search">Search</label>
+                  </div>
+              </div>
+          </div>
+
+            <!-- filter -->
+          <div class="row mt-0">
+              <div class="col s12">
+                <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><i class="fas fa-filter"></i>Filter <i class="fas fa-angle-down"></i></div>
+                      <div class="collapsible-body">
+                          some categories
+                      </div>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+
           <!-- businesses 1 -->
           <div class="row">
             <div class="col s12 m6">
               <div class="card img-ab">
                 <div class="card-image">
-                  <img src="https://via.placeholder.com/800" />
+                  <img src="https://lorempixel.com/800/800/cats/3" />
                   <div class="card-tags">
                     <span class="tag red darken-1">Tag 1</span>
                     <span class="tag red darken-1">Tag 2</span>
@@ -166,7 +191,7 @@
             <div class="col s12 m6">
               <div class="card img-ab">
                 <div class="card-image">
-                  <img src="https://via.placeholder.com/800" />
+                  <img src="https://lorempixel.com/800/800/food/1" />
                   <div class="card-tags">
                     <span class="tag red darken-1">Tag 1</span>
                     <span class="tag red darken-1">Tag 2</span>
@@ -214,7 +239,7 @@
             <div class="col s12 m6">
               <div class="card img-ab">
                 <div class="card-image">
-                  <img src="https://via.placeholder.com/800" />
+                  <img src="https://lorempixel.com/800/800/nightlife/5" />
                   <div class="card-tags">
                     <span class="tag red darken-1">Tag 1</span>
                     <span class="tag red darken-1">Tag 2</span>
@@ -263,7 +288,7 @@
     <!-- single business modal -->
     <div id="modal1" class="modal business-modal">
         <div class="modal-img">
-            <img src="https://via.placeholder.com/1000" />
+            <img src="https://lorempixel.com/1000/1000/cats/3" />
             <div class="back-btn">
                 <a class="modal-close white-text"><i class="fas fa-arrow-left"></i></a>
             </div>
@@ -305,29 +330,99 @@
                 <h4>About Business</h4>
                 <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <!-- tabs -->
+            <!-- slider -->
             <div class="divider"></div>
+            <div class="section">
+                <div class="slider">
+                    <ul class="slides">
+                      <li>
+                        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->                        
+                      </li>
+                      <li>
+                        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->                        
+                      </li>
+                      <li>
+                        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->                        
+                      </li>
+                      <li>
+                        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->                                                 
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+            <!-- tabs -->
+            <!--<div class="divider"></div>
             <div class="section">
                 <div class="row">
                     <div class="col s12">
                       <ul class="tabs">
                         <li class="tab col s3"><a class="active" href="#test1">Products</a></li>
-                        <!-- <li class="tab col s3"><a href="#test2">Menu</a></li> -->
                         <li class="tab col s3"><a href="#test4">Deals</a></li>
                       </ul>
                       
                     </div>
                     <div id="test1" class="col s12">Products</div>
-                    <!-- <div id="test2" class="col s12">Menu</div> -->
                     <div id="test4" class="col s12">Deals</div>
                   </div>
+            </div> -->
+            <!-- actions -->            
+            <div class="divider"></div>
+            <div class="section action-buttons">
+                <div class="row social">
+                    <div class="col s12 center-align">
+                        <span class="social-icon fb">
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fab fa-facebook-square mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                        <span class="social-icon ig">
+                            <a href="https://instagram.com" target="_blank">
+                                <i class="fab fa-instagram-square mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                        <span class="social-icon tw">
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fab fa-twitter-square mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                        <span class="social-icon yt">
+                            <a href="https://youtube.com" target="_blank">
+                                <i class="fab fa-youtube-square mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                        <span class="social-icon pt">
+                            <a href="https://pinterest.com" target="_blank">
+                                <i class="fab fa-pinterest-square mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                        <span class="social-icon li">
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fab fa-linkedin mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                        <span class="social-icon sc">
+                            <a href="https://snapchat.com" target="_blank">
+                                <i class="fab fa-snapchat-square mr-1 ml-1"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6 center-align">
+                        <a href="#!" class="waves-effect waves-light btn red darken-2">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="col s6 center-align">
+                        <a href="https://triplecdigital.com" class="waves-effect waves-light btn blue-grey darken-2" target="_blank">Website</a>
+                    </div>
+                </div>
             </div>
             <!-- reviews -->
             <div class="divider"></div>
-            <div class="section">
-                <h4>Reviews</h4>
+            <div class="section">                
                 <div class="review-form row z-depth-3">
-                    <form class="col s12 rating">
+                    <form id="reviewBusiness" class="col s12 rating">
                         <div class="row">
                             <div class="col s12">
                                 <h5>Leave a Review</h5>
@@ -354,21 +449,116 @@
                         </div>
                     </form>
                 </div>
-                <div class="reviews"></div>
-            </div>
-            <div class="divider"></div>
-            <div class="section">
-                <h4>Some Stuff</h4>
-                <p>Stuff</p>
-            </div>
-            <div class="divider"></div>
-            <div class="section">
-                <h4>Some Stuff</h4>
-                <p>Stuff</p>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                <h4>Reviews</h4>
+                <div class="divider"></div>
+                <div class="reviews">
+                    <div class="review mt-4 mb-4 pt-3 z-depth-3">
+                        <div class="original mt-2 mb-2">
+                            <div class="row mb-0">
+                                <div class="ident col s4">
+                                    <div class="row mb-0 pt-2">
+                                        <div class="profile-img col s12 center-align">
+                                            <img src="https://lorempixel.com/50/50/cats/7" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-0">
+                                        <div class="profile-name col s12 center-align">
+                                            <span class="name">John Doe</span>
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <a class='dropdown-trigger red-text text-darken-2' href='#' data-target='dropdown1'><i class="fas fa-ellipsis-h"></i></a>
+                                        <ul id='dropdown1' class='dropdown-content'>
+                                            <li><a href="#!" class="red-text text-darken-2">Report</a></li>
+                                        </ul>
+                                    </div>  
+                                </div>
+                                <div class="content col s8">
+                                    <div class="single-review-stars">
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                    </div>
+                                    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply business-owner-res red lighten-5">
+                            <div class="row mb-0">
+                                <div class="ident col s4">
+                                    <div class="row mb-0 pt-2">
+                                        <div class="profile-img col s12 center-align">
+                                            <img src="https://lorempixel.com/50/50/cats/3" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-0">
+                                        <div class="profile-name col s12 center-align">
+                                            <span class="name">Company ABC, LLC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content col s8">
+                                    <p>Duis aute irure dolor i reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>                            
+                        </div>                                                
+                    </div> 
+                    <div class="review mt-4 mb-4 pt-3 z-depth-3">
+                        <div class="original mt-2 mb-2">
+                            <div class="row mb-0">
+                                <div class="ident col s4">
+                                    <div class="row mb-0 pt-2">
+                                        <div class="profile-img col s12 center-align">
+                                            <img src="https://lorempixel.com/50/50/cats/2" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-0">
+                                        <div class="profile-name col s12 center-align">
+                                            <span class="name">Jane Smith</span>
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <a class='dropdown-trigger red-text text-darken-2' href='#' data-target='dropdown2'><i class="fas fa-ellipsis-h"></i></a>
+                                        <ul id='dropdown2' class='dropdown-content'>
+                                            <li><a href="#!" class="red-text text-darken-2">Report</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                                <div class="content col s8">
+                                    <div class="single-review-stars">
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                        <i class="fas fa-star rev-star amber-text text-darken-1"></i>
+                                    </div>
+                                    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leave-a-reply reply pb-3">
+                            <form id="replyToReview" class="reply-form">
+                                <div class="row mb-0">
+                                    <div class="col s12">
+                                        <h6>Leave a Reply</h6>
+                                    </div>
+                                </div>
+                                <div class="row mb-0">
+                                    <div class="col s12">
+                                        <textarea placeholder="Write reply..." class="materialize-textarea"></textarea>
+                                    </div>                            
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <button type="submit" class="waves-effect waves-light btn red darken-1">Reply</button>
+                                    </div>
+                                </div> 
+                            </form>                                                      
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 

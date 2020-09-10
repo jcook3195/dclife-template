@@ -39,10 +39,87 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #e53935;
 }
 
+input:not([type]):focus:not([readonly]) + label,
+input[type='text']:not(.browser-default):focus:not([readonly]) + label,
+input[type='password']:not(.browser-default):focus:not([readonly]) + label,
+input[type='email']:not(.browser-default):focus:not([readonly]) + label,
+input[type='url']:not(.browser-default):focus:not([readonly]) + label,
+input[type='time']:not(.browser-default):focus:not([readonly]) + label,
+input[type='date']:not(.browser-default):focus:not([readonly]) + label,
+input[type='datetime']:not(.browser-default):focus:not([readonly]) + label,
+input[type='datetime-local']:not(.browser-default):focus:not([readonly])
+  + label,
+input[type='tel']:not(.browser-default):focus:not([readonly]) + label,
+input[type='number']:not(.browser-default):focus:not([readonly]) + label,
+input[type='search']:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+.input-field .prefix.active {
+  color: #e53935 !important;
+}
+
 nav {
   .sidenav-trigger {
     float: right;
   }
+}
+
+// 0 - 0px
+// 1 - 4px
+// 2 - 8px
+// 3 - 12px
+// 4 - 16px
+// 5 - 20px
+// 6 - 24px
+// 7 - 28px
+// 8 - 32px
+// 9 - 36px
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-2 {
+  margin-top: 8px !important;
+}
+
+.mt-4 {
+  margin-top: 16px !important;
+}
+
+.mr-1 {
+  margin-right: 4px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-2 {
+  margin-bottom: 8px !important;
+}
+
+.mb-4 {
+  margin-bottom: 16px !important;
+}
+
+.ml-1 {
+  margin-left: 4px !important;
+}
+
+.pt-2 {
+  padding-top: 8px !important;
+}
+
+.pt-3 {
+  padding-top: 12px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-3 {
+  padding-bottom: 12px !important;
 }
 
 .sidenav {
@@ -108,12 +185,6 @@ nav {
         }
       }
 
-      .card-title {
-        padding: 6px 12px;
-        margin: 18px 12px;
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-
       .card-review-stars {
         position: absolute;
         padding: 4px 24px;
@@ -128,6 +199,12 @@ nav {
         border-radius: 5px;
         color: #fff;
       }
+    }
+
+    .card-title {
+      padding: 6px 12px;
+      margin: 18px 12px;
+      background-color: rgba(0, 0, 0, 0.8);
     }
   }
 }
@@ -210,6 +287,42 @@ nav {
         }
       }
     }
+
+    .reviews {
+      .review {
+        .original {
+          position: relative;
+        }
+
+        .reply {
+          border-top: 1px solid #ccc;
+        }
+
+        .ident {
+          border-right: 1px solid #ccc;
+        }
+
+        .leave-a-reply {
+          h6 {
+            font-weight: 700;
+          }
+        }
+
+        .options {
+          position: absolute;
+          top: -12px;
+          right: 4%;
+
+          a {
+            &.dropdown-trigger {
+              i {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -230,5 +343,57 @@ nav {
 
   .indicator {
     background-color: #e53935;
+  }
+}
+
+.action-buttons {
+  .social {
+    .social-icon {
+      i {
+        font-size: 2.2rem;
+      }
+    }
+
+    .fb {
+      a {
+        color: #1877f2 !important;
+      }
+    }
+
+    .ig {
+      a {
+        color: #c32aa3 !important;
+      }
+    }
+
+    .tw {
+      a {
+        color: #1da1f2 !important;
+      }
+    }
+
+    .yt {
+      a {
+        color: #ff0000 !important;
+      }
+    }
+
+    .pt {
+      a {
+        color: #bd081c !important;
+      }
+    }
+
+    .li {
+      a {
+        color: #007bb5 !important;
+      }
+    }
+
+    .sc {
+      a {
+        color: #000000 !important;
+      }
+    }
   }
 }
