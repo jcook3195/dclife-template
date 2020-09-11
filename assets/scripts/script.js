@@ -9,6 +9,11 @@ $(document).ready(function () {
     $('select').formSelect();
   }
 
+  // init charcount on about input
+  if ($('#aboutBusinessInput').length) {
+    $('#aboutBusinessInput').characterCount();
+  }
+
   // init carousel
   if ($('.carousel').length) {
     $('.carousel').carousel();
