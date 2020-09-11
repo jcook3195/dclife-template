@@ -1,5 +1,11 @@
 @import 'variables.scss';
 
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 242px;
+}
+
 h1 {
   &.pg-heading {
     font-size: 3.4rem;
@@ -179,6 +185,13 @@ nav {
   .section-header {
     font-size: 2.56rem;
   }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 242px;
 }
 
 .carousel-container {
