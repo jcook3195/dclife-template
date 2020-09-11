@@ -4,6 +4,11 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
   }
 
+  // init select dropdown
+  if ($('select').length) {
+    $('select').formSelect();
+  }
+
   // init carousel
   if ($('.carousel').length) {
     $('.carousel').carousel();

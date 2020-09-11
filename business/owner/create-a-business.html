@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="../../assets/styles/style.css" rel="stylesheet" />
+    <title>Create a Business | Dodge County Life</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section id="header">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="/index.html" class="brand-logo grey-text text-darken-2"
+            ><img src="../../assets/images/logo.png"
+          /></a>
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger red-text text-darken-2"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a
+                href="business/all-businesses.html"
+                class="grey-text text-darken-2"
+                ><i class="fas fa-store-alt"></i> Businesses</a
+              >
+            </li>
+            <li>
+              <a href="profile/profile.html" class="grey-text text-darken-2"
+                ><i class="fas fa-user-circle"></i> Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="account/account-settings.html"
+                class="grey-text text-darken-2"
+                ><i class="fas fa-cog"></i> Settings</a
+              >
+            </li>
+            <li>
+              <a href="#!" class="grey-text text-darken-2"
+                ><i class="fas fa-sign-out-alt"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a
+            href="profile/profile.html"
+            class="profile-img-side-nav grey-text text-darken-2"
+            ><img
+              class="profile-img"
+              src="assets/images/profile-pic.jpg"
+            /><span class="profile-name">Jordan Cook</span></a
+          >
+        </li>
+        <li>
+          <a href="business/all-businesses.html"
+            ><i class="fas fa-store-alt"></i> Businesses</a
+          >
+        </li>
+        <li>
+          <a href="profile/profile.html"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+        </li>
+        <li>
+          <a href="account/account-settings.html"
+            ><i class="fas fa-cog"></i> Settings</a
+          >
+        </li>
+        <li>
+          <a href="#!"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- body -->
+    <section id="main">
+      <div class="container">
+        <div class="form-container">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="col s12">
+                  <h2 class="center-align section-header">Create Business</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    placeholder="Placeholder"
+                    id="business_name"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="business_name">Business Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="relationToCompany">
+                    <option value="" disabled selected>Choose</option>
+                    <option value="owner">Owner</option>
+                    <option value="manager">Manager</option>
+                    <option value="employee">Employee</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label for="relationToCompany">Relation to Company</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="businessType">
+                    <option value="" disabled selected>Choose</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="food">Food</option>
+                    <option value="finance">Finance</option>
+                    <option value="service">Service</option>
+                  </select>
+                  <label for="businessType">Business Type</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="businessSubCat">
+                    <option value="" disabled selected>Choose</option>
+                    <option value="boutique">Boutique</option>
+                    <option value="fleaMarket">Flea Market</option>
+                    <option value="retail">Retail</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label for="businessSubCat">Business Subcategory</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="streetAddr" type="text" class="validate" />
+                  <label for="streetAddr">Street Address</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="city" type="text" class="validate" />
+                  <label for="city">City</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <p>
+                    *Your state will default to Georgia, since no businesses
+                    should be created that are not in close proximity to the
+                    Dodge Count, GA area.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    id="zipcode"
+                    type="text"
+                    pattern="[0-9]{5}"
+                    class="validate"
+                  />
+                  <label for="zipcode">Zipcode</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate" />
+                  <label for="email">Contact Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="number" type="tel" class="validate" />
+                  <label for="number">Contact Phone Number</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <button class="waves-effect waves-light btn red darken-1">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+      <footer class="page-footer white z-depth-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 offset-l2 s12">
+              <h5 class="grey-text text-darken-3">Navigation</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!"
+                    >Grow Your Business</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!">Blog</a>
+                </li>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!"
+                    >Community Resources</a
+                  >
+                </li>
+                <li>
+                  <a class="grey-text text-darken-2" href="#!"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container grey-text text-darken-2 center">
+            &copy; 2020 Triple C Digital, LLC
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../../assets/scripts/script.js"></script>
+  </body>
+</html>

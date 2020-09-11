@@ -45,6 +45,16 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #e53935;
 }
 
+.select-wrapper {
+  input {
+    &.select-dropdown {
+      &:focus {
+        border-bottom: 1px solid #e53935 !important;
+      }
+    }
+  }
+}
+
 input:not([type]):focus:not([readonly]) + label,
 input[type='text']:not(.browser-default):focus:not([readonly]) + label,
 input[type='password']:not(.browser-default):focus:not([readonly]) + label,
@@ -192,6 +202,15 @@ nav {
   bottom: 0;
   width: 100%;
   height: 242px;
+}
+
+.dropdown-content {
+  li {
+    a,
+    span {
+      color: #d32f2f !important;
+    }
+  }
 }
 
 .carousel-container {
